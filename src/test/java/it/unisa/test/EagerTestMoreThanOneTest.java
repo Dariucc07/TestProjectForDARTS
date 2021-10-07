@@ -1,39 +1,42 @@
 package it.unisa.test;
 
-import it.unisa.progetto.Example0;
-import it.unisa.progetto.Example1;
-import it.unisa.progetto.Example2;
-import it.unisa.progetto.Example3;
+import it.unisa.progetto.EagerTestMoreThanOne;
 import org.junit.Test;
 
 public class EagerTestMoreThanOneTest {
-    private Example0 example0;
-    private Example1 example1;
+    private EagerTestMoreThanOne moreThanOne;
+    private EagerTestMoreThanOne moreThanOne1;
 
-    private Example2 example2;
-    private Example3 example3;
+    private EagerTestMoreThanOne moreThanOne2;
+    private EagerTestMoreThanOne moreThanOne3;
 
     @Test
     public void test1(){
-        example0 = new Example0();
-        example1 = new Example1();
+        moreThanOne = new EagerTestMoreThanOne();
+        moreThanOne1 = new EagerTestMoreThanOne();
 
-        example0.doSomething(2);
-        example1.doSomething(2);
+        moreThanOne.doSomething(2);
+        moreThanOne.doSomething(33);
+
+        moreThanOne1.doSomething(2);
+        moreThanOne1.doSomething(33);
     }
 
     @Test
     public void test2(){
-        example2 = new Example2();
-        example2.doSomething(4);
+        moreThanOne2 = new EagerTestMoreThanOne();
+        moreThanOne2.doSomething(4);
+        moreThanOne2.doSomething(44);
 
-        example3 = new Example3();
-        example3.doSomething(4);
+        moreThanOne3 = new EagerTestMoreThanOne();
+
+        moreThanOne3.doSomething(4);
+        moreThanOne3.doSomething(44);
     }
 
     @Test
     public void test3(){
-        example1 = new Example1();
-        example1.doSomething(4);
+        moreThanOne = new EagerTestMoreThanOne();
+        moreThanOne.doSomething(2);
     }
 }

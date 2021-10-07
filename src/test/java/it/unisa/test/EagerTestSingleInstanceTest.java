@@ -1,7 +1,6 @@
 package it.unisa.test;
 
-import it.unisa.progetto.Example0;
-import it.unisa.progetto.Example1;
+import it.unisa.progetto.EagerTestSingleInstance;
 import org.junit.Test;
 
 /**
@@ -15,27 +14,27 @@ import org.junit.Test;
  * An Eager Test Occurs when a test method invokes several methods of the production object.
  */
 public class EagerTestSingleInstanceTest {
-    private Example0 example0;
-    private Example1 example1;
+    private EagerTestSingleInstance singleInstance;
+    private EagerTestSingleInstance singleInstance1;
 
     @Test
     public void test1(){
-        example0 = new Example0();
-        example1 = new Example1();
+        singleInstance = new EagerTestSingleInstance();
+        singleInstance1 = new EagerTestSingleInstance();
 
-        example0.doSomething(2);
-        example1.doSomething(2);
+        singleInstance.doSomething(2);
+        singleInstance1.doSomething(2);
     }
 
     @Test
     public void test2(){
-        example0 = new Example0();
-        example0.doSomething(4);
+        singleInstance = new EagerTestSingleInstance();
+        singleInstance.doSomething(4);
     }
 
     @Test
     public void test3(){
-        example1 = new Example1();
-        example1.doSomething(4);
+        singleInstance1 = new EagerTestSingleInstance();
+        singleInstance1.doSomething(4);
     }
 }

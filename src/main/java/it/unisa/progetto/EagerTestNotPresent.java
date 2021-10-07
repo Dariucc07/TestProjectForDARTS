@@ -1,6 +1,6 @@
 package it.unisa.progetto;
 
-public class Example4 {
+public class EagerTestNotPresent {
     public void doSomething(int p) {
         if (p == 1) {
             a();
@@ -14,18 +14,6 @@ public class Example4 {
     }
 
     public void doSomething2(int p) {
-        if (p == 1) {
-            a();
-        }
-        else if(p==22){
-            c();
-        }
-        else {
-            b();
-        }
-    }
-
-    public void doSomething3(int p) {
         if (p == 1) {
             a();
         }
