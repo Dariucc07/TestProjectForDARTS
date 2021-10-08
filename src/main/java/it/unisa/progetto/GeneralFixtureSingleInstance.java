@@ -1,20 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package it.unisa.progetto;
 
-/**
- *
- * @author Rembor
- */
-public class Example0 {
+public class GeneralFixtureSingleInstance {
 
     public void doSomething(int p) {
         if (p == 1) {
             a();
-        } 
+        }
         else if(p==22){
             c();
         }

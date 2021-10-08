@@ -1,6 +1,7 @@
 package it.unisa.progetto;
 
-public class Example3 {
+public class GeneralFixtureNotPresent {
+
     public void doSomething(int p) {
         if (p == 1) {
             a();
