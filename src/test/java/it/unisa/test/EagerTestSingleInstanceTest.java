@@ -18,6 +18,9 @@ public class EagerTestSingleInstanceTest {
     private EagerTestSingleInstance singleInstance1;
 
     @Test
+    /**
+     * Method with EAGER TEST
+     */
     public void test1(){
         singleInstance = new EagerTestSingleInstance();
         singleInstance1 = new EagerTestSingleInstance();

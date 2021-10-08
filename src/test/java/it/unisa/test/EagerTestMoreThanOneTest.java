@@ -11,6 +11,9 @@ public class EagerTestMoreThanOneTest {
     private EagerTestMoreThanOne moreThanOne3;
 
     @Test
+    /**
+     * Method with EAGER TEST
+     */
     public void test1(){
         moreThanOne = new EagerTestMoreThanOne();
         moreThanOne1 = new EagerTestMoreThanOne();
@@ -23,6 +26,9 @@ public class EagerTestMoreThanOneTest {
     }
 
     @Test
+    /**
+     * Method with EAGER TEST
+     */
     public void test2(){
         moreThanOne2 = new EagerTestMoreThanOne();
         moreThanOne2.doSomething(4);
