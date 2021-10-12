@@ -15,4 +15,9 @@ public class LackOfCohesionSingleInstanceTest {
         LackOfCohesionMoreThanOne moreThanOne = new LackOfCohesionMoreThanOne();
         moreThanOne.doSomething(22);
     }
+
+    @Test
+    public void test2(){
+        System.out.println(emilio.toUpperCase());
+    }
 }
