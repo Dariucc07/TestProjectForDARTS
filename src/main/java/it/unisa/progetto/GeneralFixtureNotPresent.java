@@ -1,7 +1,7 @@
 package it.unisa.progetto;
 
 public class GeneralFixtureNotPresent {
-
+    int a = 2;
     public void doSomething(int p) {
         if (p == 1) {
             a();
@@ -36,5 +36,13 @@ public class GeneralFixtureNotPresent {
 
     private void c() {
         System.out.println("marcellino");
+    }
+
+    public void setA(int a){
+        this.a = a;
+    }
+
+    public int getA() {
+        return a;
     }
 }

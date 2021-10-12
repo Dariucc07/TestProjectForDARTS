@@ -7,27 +7,25 @@ import org.junit.Test;
 public class GeneralFixtureNotPresentTest {
 
     private GeneralFixtureSingleInstance singleInstance;
-    private GeneralFixtureMoreThanOne moreThanOne;
-    private GeneralFixtureNotPresent notPresent;
+    private int a, b , c;
 
     @Before
     public void setUp() throws Exception{
-        singleInstance = new GeneralFixtureSingleInstance();
-        moreThanOne = new GeneralFixtureMoreThanOne();
-        notPresent = new GeneralFixtureNotPresent();
+        GeneralFixtureSingleInstance singleInstance;
+        a = b = c = 2;
     }
 
     @Test
     public void test1(){
+        singleInstance = new GeneralFixtureSingleInstance();
         singleInstance.doSomething(2);
-        moreThanOne.doSomething(22);
-        notPresent.doSomething(222);
+        c = a + b;
+
     }
 
     @Test
     public void test2(){
         singleInstance.doSomething(3);
-        moreThanOne.doSomething(33);
-        notPresent.doSomething(333);
+        a = c + b;
     }
 }
