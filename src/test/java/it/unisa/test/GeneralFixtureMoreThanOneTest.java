@@ -7,6 +7,7 @@ import org.junit.Test;
 public class GeneralFixtureMoreThanOneTest {
 
     private GeneralFixtureSingleInstance singleInstance;
+    private GeneralFixtureSingleInstance singleInstance2;
     private GeneralFixtureMoreThanOne moreThanOne;
     private GeneralFixtureNotPresent notPresent;
 
