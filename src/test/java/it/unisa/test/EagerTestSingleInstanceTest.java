@@ -26,7 +26,8 @@ public class EagerTestSingleInstanceTest {
         singleInstance1 = new EagerTestSingleInstance();
 
         singleInstance.doSomething(2);
-        singleInstance1.doSomething(2);
+        singleInstance1.doSomething2(2);
+        singleInstance1.a();
     }
 
     @Test

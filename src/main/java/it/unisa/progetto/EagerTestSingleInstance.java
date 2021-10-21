@@ -25,7 +25,7 @@ public class EagerTestSingleInstance {
         }
     }
 
-    private void a() {
+    public void a() {
         System.out.println("a");
     }
 
