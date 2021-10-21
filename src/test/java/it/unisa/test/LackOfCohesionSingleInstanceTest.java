@@ -1,23 +1,46 @@
 package it.unisa.test;
 
 import it.unisa.progetto.LackOfCohesionMoreThanOne;
+import it.unisa.progetto.LackOfCohesionNotPresent;
+import it.unisa.progetto.LackOfCohesionSingleInstance;
 import org.junit.Test;
 
 public class LackOfCohesionSingleInstanceTest {
 
-    private String emilio;
+    private String emilio,ciccio;
+    String antonio="prova";
+    int a, b,c;
+    LackOfCohesionNotPresent notInstance;
+    LackOfCohesionMoreThanOne moreThanOne;
+    LackOfCohesionSingleInstance single;
 
     /**
      * LACK OF COHESION
      */
     @Test
     public void test1(){
-        LackOfCohesionMoreThanOne moreThanOne = new LackOfCohesionMoreThanOne();
+        moreThanOne = new LackOfCohesionMoreThanOne();
         moreThanOne.doSomething(22);
+        notInstance = new LackOfCohesionNotPresent();
+        notInstance.doSomething2(32);
+        String ciccio= "prova";
+        String emilio= "prova";
+        String results3 = ciccio.toUpperCase();
     }
 
     @Test
     public void test2(){
-        System.out.println(emilio.toUpperCase());
+        System.out.println(antonio.toUpperCase());
+
+        String results = antonio.toUpperCase();
+        String results2 = antonio.toUpperCase();
+    }
+    @Test
+    public void test3(){
+        a=a+b+c;
+    }
+    @Test
+    public void test4(){
+       single = new LackOfCohesionSingleInstance();
     }
 }
