@@ -25,7 +25,7 @@ public class EagerTestMoreThanOne {
         }
     }
 
-    private void a() {
+    public void a() {
         System.out.println("a");
     }
 

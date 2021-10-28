@@ -19,10 +19,10 @@ public class EagerTestMoreThanOneTest {
         moreThanOne1 = new EagerTestMoreThanOne();
 
         moreThanOne.doSomething(2);
-        moreThanOne.doSomething(33);
+        moreThanOne.doSomething2(33);
 
         moreThanOne1.doSomething(2);
-        moreThanOne1.doSomething(33);
+        moreThanOne1.a();
     }
 
     @Test
@@ -37,7 +37,8 @@ public class EagerTestMoreThanOneTest {
         moreThanOne3 = new EagerTestMoreThanOne();
 
         moreThanOne3.doSomething(4);
-        moreThanOne3.doSomething(44);
+        moreThanOne3.doSomething2(44);
+        moreThanOne3.a();
     }
 
     @Test
